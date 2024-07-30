@@ -1,0 +1,43 @@
+String Buffer
+---------------
+StringBuffer is a class in Java that represents a mutable sequence of characters. It provides an alternative to the immutable String class, allowing you to modify the contents of a string without creating a new object every time.
+
+
+ Important features and methods of the StringBuffer class:
+ ----------------------------------------------------------
+1) StringBuffer objects are mutable, meaning that you can change the contents of the buffer without creating a new object.
+
+2) The initial capacity of a StringBuffer can be specified when it is created, or it can be set later with the ensureCapacity() method.
+
+3) The append() method is used to add characters, strings, or other objects to the end of the buffer.
+
+4) The insert() method is used to insert characters, strings, or other objects at a specified position in the buffer.
+
+5) The delete() method is used to remove characters from the buffer.
+
+6) The reverse() method is used to reverse the order of the characters in the buffer.
+
+Advantages of using StringBuffer over regular String objects in Java:
+--------------------------------------------------------------------
+1) Mutable: StringBuffer objects are mutable, which means that you can modify the contents of the object after it has been created. 
+
+In contrast, String objects are immutable, which means that you cannot change the contents of a String once it has been created.
+
+2)Efficient: Because StringBuffer objects are mutable, they are more efficient than creating new String objects each time you need to modify a string.
+This is especially true if you need to modify a string multiple times, as each modification to a String object creates a new object and discards the old one.
+
+Thread-Safety
+---------------
+Note: Both String and StringBuffer objects are thread safe.
+StringBuffer is synchronized, making it thread-safe, but this does not mean that multiple threads can access it simultaneously without potential performance issues.
+
+Immutable objects are by default thread-safe because their state can not be modified once created. Since String is immutable in Java, it’s inherently thread safe.
+
+Important Constructors of StringBuffer class
+--------------------------------------------
+1) StringBuffer(): creates an empty string buffer with an initial capacity of 16.
+
+2) StringBuffer(String str): creates a string buffer with the specified string.
+
+3) StringBuffer(int capacity): creates an empty string buffer with the specified capacity as length.
+
